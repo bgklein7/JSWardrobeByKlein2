@@ -1,0 +1,43 @@
+﻿body {
+    background-image: url('Content/images/mensStore1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*.jumbotron {
+    opacity: 0.75;
+    color: black;
+    background-image: url('Content/images/horizontalBlkPld.jpg');
+}
+.jumbotron h1{
+    opacity: 1!important;
+}*/
+
+.myDiv {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white!important;
+}
+
+    .myDiv .bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url(Content/images/horizontalBlkPld.jpg) center center;
+        opacity: .6;
+        width: 100%;
+        height: 100%;
+    }
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
