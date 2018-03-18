@@ -28,9 +28,12 @@
         background-color: white!important;
         color: black!important;
         border-color: black!important;
+        font-weight: bold;
     }
     .btn-default{
         border-color: black!important;
+        color: black!important;
+        font-weight: bold;
     }
 
 @media screen and (max-width: 768px) {
@@ -40,9 +43,33 @@
     }
 }
 
-.homeRow{
-    color: white!important;
+.homeRow h2{
+    color: black!important;
+}
+.homeRow p{
+    color: black!important;
+}
+.homeRow {
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: white !important;
 }
 
-
+.homeRow .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    /*background: url(Content/images/horizontalBlkPld.jpg) center center;*/
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+}
 

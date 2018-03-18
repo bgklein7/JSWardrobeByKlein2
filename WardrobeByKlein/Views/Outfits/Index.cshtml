@@ -9,7 +9,7 @@
 
     <h2>Outfit Viewer</h2>
 
-    <p>
+    <p id="outfitCreateLink">
         @Html.ActionLink("Create New", "Create")
     </p>
     <hr />
@@ -25,7 +25,6 @@
                 <img id="outfitComponent" src="@Html.DisplayFor(modelItem => item.Sho.ShoePhoto)" />
                 <hr />
                 @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.OutfitID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })
             </div>
         </div>

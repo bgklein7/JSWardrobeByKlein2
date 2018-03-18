@@ -198,6 +198,7 @@
     <Content Include="Content\images\blueShirt.jpg" />
     <Content Include="Content\images\brownFedora.jpg" />
     <Content Include="Content\images\closet.jpg" />
+    <Content Include="Content\images\fashionStudio.jpg" />
     <Content Include="Content\images\gingham.jpg" />
     <Content Include="Content\images\greenHerringbone.jpg" />
     <Content Include="Content\images\greenPants.jpg" />
@@ -272,6 +273,7 @@
     <Content Include="StyleSheetBottoms.css" />
     <Content Include="StyleSheetHome.css" />
     <Content Include="StyleSheetOutfit.css" />
+    <Content Include="StyleSheetOutfitCreator.css" />
     <Content Include="StyleSheetShoes.css" />
     <Content Include="StyleSheetTops.css" />
     <Content Include="Web.config" />

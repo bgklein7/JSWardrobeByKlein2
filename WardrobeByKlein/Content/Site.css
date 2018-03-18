@@ -30,7 +30,8 @@ ul.nav.navbar-nav li a:hover{
     color: yellow!important;
 }
 a.navbar-brand{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Mr Bedfort', cursive;
+    font-size: 24px;
 }
 
 /*Index Pages Styling*/
@@ -89,4 +90,8 @@ a.navbar-brand{
 }
 .outfitThumb a{
     color: white!important;
+}
+
+#outfitCreateLink a{
+    color: black!important;
 }
