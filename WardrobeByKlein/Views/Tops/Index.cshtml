@@ -1,64 +1,40 @@
-﻿<link href="~/StyleSheetTops.css" rel="stylesheet" />
+﻿<link href="~/Content/Site.css" rel="stylesheet" />
+<link href="~/StyleSheetTops.css" rel="stylesheet" />
 @model IEnumerable<WardrobeByKlein.Models.Top>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Tops</h2>
+<h2 id="indexPageTitle">Tops</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.TopName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopPhoto)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopColor)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopSeason)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TopOccasion)
-        </th>
-        <th></th>
-    </tr>
+<p id="createNewLink">@Html.ActionLink("Create New", "Create")</p>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopPhoto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopColor)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopSeason)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TopOccasion)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.TopID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.TopID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.TopID })
-        </td>
-    </tr>
-}
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6">
+            <div class="thumbnail">
+                <div class="row subrow">
+                    <div class="col-md-6 subcol">
+                        <img id="itemIndexPic" src="@Html.DisplayFor(modelItem => item.TopPhoto)" />
+                    </div>
+                    <div class="col-md-6 subcol">
+                        <div class="caption">
+                            <h3>@Html.DisplayFor(modelItem => item.TopName)</h3>
+                            <p> <em>@Html.DisplayNameFor(model => model.TopType)</em> :  @Html.DisplayFor(modelItem => item.TopType)</p>
+                            <p> <em>@Html.DisplayNameFor(model => model.TopColor)</em> :  @Html.DisplayFor(modelItem => item.TopColor)</p>
+                            <p>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.TopID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.TopID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.TopID })
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
 
-</table>
+

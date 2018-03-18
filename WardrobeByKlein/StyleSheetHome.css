@@ -1,16 +1,9 @@
 ﻿body {
-    background-image: url('Content/images/mensStore1.jpg');
+    background-image: url('Content/images/closet.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*.jumbotron {
-    opacity: 0.75;
-    color: black;
-    background-image: url('Content/images/horizontalBlkPld.jpg');
-}
-.jumbotron h1{
-    opacity: 1!important;
-}*/
+
 
 .myDiv {
     position: relative;
@@ -31,12 +24,24 @@
         width: 100%;
         height: 100%;
     }
+    .btn-primary{
+        background-color: white!important;
+        color: black!important;
+        border-color: black!important;
+    }
+    .btn-default{
+        border-color: black!important;
+    }
 
 @media screen and (max-width: 768px) {
     .jumbotron {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+}
+
+.homeRow{
+    color: white!important;
 }
 
 
