@@ -235,6 +235,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="JavaScript.js" />
     <Content Include="Models\OutfitModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>OutfitModel.Context.cs</LastGenOutput>
@@ -245,6 +246,7 @@
       <DependentUpon>OutfitModel.edmx</DependentUpon>
       <LastGenOutput>OutfitModel.cs</LastGenOutput>
     </Content>
+    <Content Include="README.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <EntityDeploy Include="Models\OutfitModel.edmx">

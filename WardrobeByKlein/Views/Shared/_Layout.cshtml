@@ -1,5 +1,6 @@
 ﻿<link href="~/Content/Site.css" rel="stylesheet" />
 <link href="https://fonts.googleapis.com/css?family=Mr+Bedfort" rel="stylesheet">
+<script src="~/JavaScript.js"></script>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +9,9 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    
 </head>
-<body>
+<body onbeforeprint="Print()">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -36,9 +38,19 @@
         @*<hr />*@
 
     </div>
+    <br />
+    <footer id="tweedleDum" onclick="SwapDivsWithClick('tweedleDee','tweedleDum')">
+        <p>Copyright 2018</p>
+        
+    </footer>
+    <footer style="display:none" id="tweedleDee" onclick="SwapDivsWithClick('tweedleDee','tweedleDum')">
+        <p>Created by Ben Klein</p>
+    </footer>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
 </body>
 </html>
