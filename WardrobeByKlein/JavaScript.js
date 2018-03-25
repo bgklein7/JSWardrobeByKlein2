@@ -15,8 +15,13 @@ function Greeting() {
     var userResponse = prompt('Welcome to the Wardrobe. What is your name?');
     x.getElementsByTagName('h1')[0].innerText = 'Welcome to the Wardrobe, ' + userResponse;
 }
+
+//var lower = 'this is an entirely lowercase string';
+//var upper = lower.charAt(0).toUpperCase() + string.substr(1);
+
+
 function Print() {
-    var printCon = confirm("Are you sure you want to print this page?");
+    var printCon = alert("Are you sure you want to print this page?");
 
 }
 function HideWithClick(div1) {
@@ -36,7 +41,7 @@ function TextHighlight(x) {
         x.style.color = "yellow";
 }
 function TextUnHighlight(x) {
-    x.style.fontSize = "x-large";
+    x.style.fontSize = "21px";
     x.style.color = "inherit";
 }
 function Redirect(x) {
@@ -49,4 +54,43 @@ function Redirect(x) {
         var win = window.open("http://www.dappered.com", '_blank');
         win.focus();
     }
+}
+
+function getHTML() {
+    var userTerm = prompt('What color top would you like to search for?').toLowerCase()
+    //var y = document.getElementsByClassName('shirtName').innerHTML;
+    var topArray = new Array(0)
+    var x = document.getElementsByClassName('shirtColor').innerHTML.toLowerCase();
+    for (i = 0; i < 3; i++) {
+        if (x == userTerm) {
+            topArray[i] = document.getElementsByClassName('shirtName').innerHTML;
+        }
+    }
+    alert(topArray);
+        //for (j = 0; j < topArray.length; j++) {
+
+        //    if (userTerm == topArray[j]) {
+        //        document.getElementById("insert").innerHTML = 'See: ' + y;
+        //    }
+        //}
+    
+
+
+
+}
+function Max() {
+    var clothesArray = new Array(0);
+    var userNum1 = parseInt(prompt('How many pairs of shoes do you have?'));
+    clothesArray.push(userNum1);
+    var userNum2 = parseInt(prompt('How many pairs of pants do you have?'));
+    clothesArray.push(userNum2);
+    var userNum3 = parseInt(prompt('How many shirts do you have?'));
+    clothesArray.push(userNum3);
+    if (clothesArray[0] > clothesArray[1]) {
+        alert('You do know that you can wear different shoes with different pants, do you not?');
+    }
+    if (clothesArray[0] > 20) {
+        alert(clothesArray[0] + ' pairs of shoes! Good god, man! You might have a problem.');
+    }
+
 }

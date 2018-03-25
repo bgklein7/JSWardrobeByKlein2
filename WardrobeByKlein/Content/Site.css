@@ -62,6 +62,7 @@ footer p{
     color: white!important;
 }
 
+
 /*Detail Page Styling*/
 #itemDetailPic{
     max-height: 400px;
@@ -114,4 +115,19 @@ footer p{
     border-radius: 6px;
     border-width: 1px;
     padding: 10px 16px 10px 16px;
+}
+#pollBtn {
+    background-color: white;
+    color: black;
+    border-color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    border-width: 1px;
+    padding: 10px 16px 10px 16px;
+}
+#insert{
+    color: white!important;
+    font-size: 24px;
+    font-weight: bold;
 }
