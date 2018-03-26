@@ -58,26 +58,19 @@ function Redirect(x) {
 
 function getHTML() {
     var userTerm = prompt('What color top would you like to search for?').toLowerCase()
-    //var y = document.getElementsByClassName('shirtName').innerHTML;
-    var topArray = new Array(0)
+    var topArray = new Array(0);
+    var y = document.getElementsByClassName('shirtName').innerHTML;
     var x = document.getElementsByClassName('shirtColor').innerHTML.toLowerCase();
-    for (i = 0; i < 3; i++) {
-        if (x == userTerm) {
-            topArray[i] = document.getElementsByClassName('shirtName').innerHTML;
-        }
+    for (i = 0; i < 5; i++) {
+
+        if (userTerm == x) {
+        topArray[i] = document.getElementsByClassName('shirtName').innerHTML;
+        document.getElementById("insert").innerHTML = 'See: ' + topArray[i];
+            }
     }
     alert(topArray);
-        //for (j = 0; j < topArray.length; j++) {
-
-        //    if (userTerm == topArray[j]) {
-        //        document.getElementById("insert").innerHTML = 'See: ' + y;
-        //    }
-        //}
-    
-
-
-
 }
+
 function Max() {
     var clothesArray = new Array(0);
     var userNum1 = parseInt(prompt('How many pairs of shoes do you have?'));
